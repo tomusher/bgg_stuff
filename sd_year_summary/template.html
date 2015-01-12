@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Snowdonia Dragons - Games of 2014</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="static/css/main.css">
+    </head>
+    <body>
+        <div class="logo">
+            Snowdonia Dragons
+        </div>
+        <div class="intro">We played all these games in 2014.</div>
+        <div class="bin">
+        {% for game_id, data in sessions.items() %}
+            <a href="http://boardgamegeek.com/boardgame/{{ game_id }}" class="game">
+                <img src="images/{{ game_id }}.jpg" alt="Played: {{ data.count }}">
+                <div class="game__tooltip">
+                    <span class="game__name">{{ data.game.name }}</span>
+                    {% if data.count > 1 %}
+                    <span class="game__plays">{{ data.count }} plays</span>
+                    {% else %}
+                    <span class="game__plays">{{ data.count }} play</span>
+                    {% endif %}
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/js/jquery-2.1.3.min.js"><\/script>')</script>
+        <script src="static/js/packery.pkgd.min.js"></script>
+        <script src="static/js/main.js"></script>
+
+    </body>
+</html>

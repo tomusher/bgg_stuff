@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,700);
+
+body {
+    background-color: #FFF;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bin {
+    width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 2.8em;
+    color: #113245;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.intro {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 1.4em;
+    color: #113245;
+    padding: 0 0 40px 0;
+}
+
+.game {
+    position: relative;
+    display: inline;
+    width: auto;
+}
+
+.game img {
+    display: block;
+}
+
+.game__tooltip {
+    font-size: 0.8em;
+    background-color: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    word-wrap: break-word;
+    display: none;
+    color: #fff;
+}
+
+.game__name {
+    font-weight: bold;
+    display: block;
+}
