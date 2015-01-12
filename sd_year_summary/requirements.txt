@@ -1,0 +1,6 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+Pillow==2.7.0
+boardgamegeek==0.8.1
+requests==2.5.1
+requests-cache==0.4.8

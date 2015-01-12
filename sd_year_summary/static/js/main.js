@@ -1,7 +1,9 @@
 $(document).ready(function() {
-    $('.bin').packery({
-        itemSelector: '.game',
-        gutter: 4,
+    $('.bin').imagesLoaded(function(){
+        $('.bin').packery({
+            itemSelector: '.game',
+            gutter: 4,
+        });
     });
 
     $('.game').hover(function() {
